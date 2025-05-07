@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadeByMusicFord</title>
 
+    <style>
+        body {
+            text-align: center;
+            background: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .image-container {
+            position: relative;
+            width: 75%;
+            cursor: default;
+        }
+        .background-img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+        .gif-overlay {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+            margin-top: 0;
+        }
+        .video-container {
+            width: 100%;
+            position: relative;
+            padding-top: 56.25%; /* 16:9 соотношение */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>made_by_MusicFord</h2>
+
+<div class="gallery" id="gallery">
+    <div class="image-container">
+        <img src="1.png" class="background-img" alt="Фон 1">
+        <img src="2.png" class="background-img" alt="Фон 2">
+
+        <!-- Вставка YouTube-видео, которое будет занимать всю ширину картинки -->
+       
+
+        
+        <img src="3.gif" class="gif-overlay" alt="GIF 2">
+        
+        <img src="4.gif" class="gif-overlay" alt="GIF 3">
+    </div>
+</div>
+
+</body>
+</html>
